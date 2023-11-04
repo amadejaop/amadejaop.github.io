@@ -10,4 +10,74 @@ html, body {
   width: 200px;
 }
 
-/* button should have a border and simple text - deeper gray color?; on hover: animation: border changes color to green as well as text and box shadow gets added (all green) */
+.landing {
+  min-height: 100vh;
+  width: 100%;
+}
+
+div {
+  display: inline-block;
+}
+
+nav li a {
+  border: 1px solid black;
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav li a:hover {
+  border: 1px solid blue;
+  box-shadow: 0px 0px 10px 1px blue;
+  color: blue;
+}
+
+nav {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+}
+
+.nav-links {
+  align-items: center;
+  display: flex;
+  gap: 50px;
+  justify-content: flex-end;
+  margin-right: 5vw;
+}
+
+li {
+  list-style: none;
+}
+
+#home {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about, #projects, #contact {
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+}
+
+#projects {
+  background-color: blue;
+}
+
+#contact {
+  background-color: pink;
+}
+
+.divider {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
