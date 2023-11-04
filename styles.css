@@ -1,0 +1,13 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#avatar {
+  border-radius: 50%;
+  box-shadow: 5 px 10px inset;
+  height: 200px;
+  width: 200px;
+}
+
+/* button should have a border and simple text - deeper gray color?; on hover: animation: border changes color to green as well as text and box shadow gets added (all green) */
