@@ -1,4 +1,6 @@
 html, body {
+  background-color: #fff;
+  font-family: "Merriweather", serif; 
   margin: 0;
   padding: 0;
 }
@@ -52,7 +54,7 @@ li {
 }
 
 #home {
-  background-color: pink;
+  background-color: #e1dce0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,7 +62,6 @@ li {
 }
 
 #about, #projects, #contact {
-  background-color: yellow;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -68,16 +69,52 @@ li {
   padding-top: 50px;
 }
 
+#about {
+  min-height: 920px;
+  background: url("images/about-faded.png") no-repeat;
+  /*background-image: url("images/short-about.png");*/
+}
+
 #projects {
-  background-color: blue;
 }
 
 #contact {
-  background-color: pink;
+  
+}
+
+footer {
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 50px;
+  width: 100%;
+  background-image: url("images/forest-footer.png");
+  background-size: cover;
+}
+
+h1, h2, h3 {
+  color: #41625b;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+p {
+  color: #16393f;
 }
 
 .divider {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: -90px;
+  margin-top: -90px;
+}
+
+.white-text {
+  color: white;
+  text-shadow: 1px 1px 2px #001b1f;
+}
+
+.sm-links {
+  padding-top: 70px;
 }
