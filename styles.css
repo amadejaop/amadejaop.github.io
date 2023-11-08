@@ -3,16 +3,19 @@ html, body {
   font-family: "Merriweather", serif; 
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 p {
-    font-size: 14px;
-    font-weight: 300;
+  color: #595959;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 #avatar {
   border-radius: 50%;
   height: 200px;
+  margin-top: 5vh;
   width: 200px;
 }
 
@@ -26,31 +29,35 @@ div {
 }
 
 nav li a {
-  color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #004D4D;
   font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 nav li a:hover {
-  box-shadow: 0px 0px 10px 1px blue;
-  color: blue;
+  background-color: #004D4D;
+  color: #fff;
+  font-weight: 400;
 }
 
 nav {
+  background-color: #ccd5d5;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
   display:flex;
   justify-content: space-around;
   position: fixed;
-  background-color: #ccd5d5;
-  /*background-color: #f6f4f5;*/
   width: 100%;
-  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+  z-index: 99;
 }
 
 .nav-links {
   align-items: center;
   display: flex;
-  gap: 50px;
+  /*gap: 50px;*/
   justify-content: flex-end;
   margin-right: 5vw;
 }
@@ -78,11 +85,31 @@ li {
 #about {
   min-height: 920px;
   background: url("images/about-faded.png") no-repeat;
-  /*background-image: url("images/short-about.png");*/
+}
+
+#about div {
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  color: #000;
+  margin-top: 30px;
+  padding: 20px 30px;
+  text-align: justify;
+  width: 50%;
 }
 
 #projects {
   margin-top: -200px;
+  margin-bottom: 100px;
+}
+
+#project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 auto;
+  width: 550px;
 }
 
 #contact {
@@ -103,14 +130,21 @@ footer p {
 }
 
 h1, h2, h3 {
-  color: #41625b;
+  color: #004D4D;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 200;
+  text-align: center;
 }
 
-p {
-  color: #16393f;
+h1 {
+  font-size: 35px;
+  margin-top: 7vh;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 28px;
 }
 
 .divider {
@@ -119,11 +153,6 @@ p {
   margin-right: auto;
   margin-bottom: -90px;
   margin-top: -90px;
-}
-
-.white-text {
-  color: white;
-  text-shadow: 1px 1px 2px #001b1f;
 }
 
 .sm-links {
@@ -152,26 +181,32 @@ p {
 }
 
 button {
+  background-color: #003131;
   border: none;
   border-radius: 20px;
-  background-color: #003131;
-  vertical-align: middle;
-  padding: 4px 7px 8px 5px;
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
   color: #cfdedc;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  margin-top: 30px;
+  padding: 4px 10px 8px 5px;
+  text-transform: uppercase;
 }
 
-button .icon {
+button img {
   border-radius: 20px;
-  background-color: #6f8977;
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 1px;
 }
 
 button:hover {
-  background-color: #2b5650;
+  background-color: #99acac;
+  color: #003131;
   cursor: pointer;
-} 
+}
+
+button:hover img {
+  background-color: rgba(255, 255, 255, 0.7);
+}
 
 nav img {
   height: 40px;
@@ -184,10 +219,44 @@ nav span {
 }
 
 nav p {
+  color: #004D4D;
   margin-left: 10px;
   margin-top: 20px;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 500;
+}
+.green-text {
+  color: #004D4D;
+  font-size: 16px;
+  margin: 3px;
+}
+
+.white-text {
+  color: white;
+  text-shadow: 1px 1px 3px #001b1f, -1px -1px 3px #001b1f, 1px 1px 5px #001b1f, 1px 1px 10px #001b1f;
+}
+
+footer p {
+  color: #002e2e;
+  font-size: 12px;
+  font-weight: 400;
+  text-shadow: 1px 1px 3px white, -1px -1px 3px white, 1px 1px 10px white, 1px 1px 15px white;
+}
+
+.card {
+  background-color: yellow;
+  width: 250px;
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  #about div {
+    width: 80%;
+  }
 }
