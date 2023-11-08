@@ -29,7 +29,7 @@ div {
 }
 
 nav li a {
-  background-color: rgba(255, 255, 255, 0.3);
+ /* background-color: rgba(255, 255, 255, 0.3); */
   color: #004D4D;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -38,16 +38,34 @@ nav li a {
   text-transform: uppercase;
 }
 
-nav li a:hover {
+nav li:hover {
   background-color: #004D4D;
-  color: #fff;
-  font-weight: 400;
+
+}
+
+nav li a:hover {
+  color: white;
+    font-weight: 400;
+}
+
+nav li {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+}
+
+nav li:first-child {
+  border-radius: 20px 0 0 20px;
+}
+
+nav li:last-child {
+  border-radius: 0 20px 20px 0;
 }
 
 nav {
   background-color: #ccd5d5;
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
   display:flex;
+  height: 50px;
   justify-content: space-around;
   position: fixed;
   width: 100%;
@@ -106,10 +124,11 @@ li {
 
 #project-list {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
   margin: 0 auto;
-  width: 550px;
+  width: 650px;
 }
 
 #contact {
@@ -119,7 +138,7 @@ li {
 footer {
   display: inline-block;
   text-align: center;
-  padding-bottom: 50px;
+  padding: 50px 0 50px 0;
   width: 100%;
   background-image: url("images/forest-footer.png");
   background-size: cover;
@@ -155,8 +174,9 @@ h2 {
   margin-top: -90px;
 }
 
-.sm-links {
-  padding-top: 70px;
+.sm-links img {
+  width: 35px;
+  padding: 0 10px 0 10px;
 }
 
 .icon {
@@ -173,7 +193,7 @@ h2 {
 }
 
 .attribution a {
-  color: #809888;
+  color: #99ac9f;
 }
 
 .attribution a:hover {
@@ -206,6 +226,27 @@ button:hover {
 
 button:hover img {
   background-color: rgba(255, 255, 255, 0.7);
+}
+
+form {
+  margin-top: 7vh;
+  text-align: center;
+  width: 400px;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+}
+
+input[type=submit] {
+  width: 100px;
+  
 }
 
 nav img {
@@ -245,18 +286,56 @@ footer p {
   text-shadow: 1px 1px 3px white, -1px -1px 3px white, 1px 1px 10px white, 1px 1px 15px white;
 }
 
+footer p:first-child {
+  font-size: 20px;
+}
+
 .card {
-  background-color: yellow;
-  width: 250px;
+  border-radius: 15px;
+  width: 300px;
   padding: 10px;
 }
 
 .card img {
+  border-radius: 10px;
   width: 100%;
+}
+
+.card p {
+  text-align: justify;
+}
+
+.cursive {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+  margin-top: -20px;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-buttons button {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  text-transform: lowercase;
+  font-weight: 500;
+  padding: 5px;
 }
 
 @media screen and (max-width: 750px) {
   #about div {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #project-list {
+    flex-direction: column;
+    width: 300px;
   }
 }
