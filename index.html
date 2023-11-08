@@ -10,11 +10,13 @@
     <title>Amadeja's portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Raleway:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
   </head>
   <body>
     <nav>
       <span><img src="images/avatar.png"><p>Amadeja Obšteter Privošnik</p></span>
       <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -31,8 +33,8 @@
       <div id="about" class="landing">
         <div>
           <h2>Find out more about me</h2>
-          <p class="green-text">I'm a front-end developer based in Slovenia.</p>
-          <p class="white-text">    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="green-text cursive">I'm a front-end developer based in Slovenia.</p>
+          <br><br><p class="white-text">    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
           <p class="attribution">Images provided by <a href="https://unsplash.com/@filipz">Filip Zrnzević</a>, <a href="https://unsplash.com/@maritaextrabold">Marita Kavelashvili</a> and <a href="https://unsplash.com/@mvds">Mads Schmidt Rasmussen</a>.</p>
           <p class="attribution">UIcons by <a href="https://www.flaticon.com/uicons">Flaticon</a>.</p>
         </div>
@@ -41,45 +43,49 @@
         <h2>Take a look at my projects</h2>
         <div id="project-list">
           <div class="card">
-            <img src="images/project-cs.png">
-            <h3>title</h3>
-            <p>short description</p>
-            <a href="">live preview</a>
-            <a href="">code on gitHub</a>
+            <img class="project-image" src="images/project1bw.png">
+            <h3>to-do list</h3>
+            <p>To-do list for managing your main daily goal and various tasks created with HTML, CSS and JavaScript.</p>
+            <span class="project-buttons"><a href="https://amadejaop.github.io/todo-list/todo.html"><button>live preview</button></a><a href="https://github.com/amadejaop/todo-list"><button>code on gitHub</button></a></span>
           </div>
           <div class="card">
             <img src="images/project-cs.png">
             <h3>title</h3>
-            <p>short description</p>
-            <a href="">live preview</a>
-            <a href="">code on gitHub</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <span class="project-buttons"><a href=""><button>live preview</button></a><a href=""><button>code on gitHub</button></a></span>
           </div>
           <div class="card">
             <img src="images/project-cs.png">
             <h3>title</h3>
-            <p>short description</p>
-            <a href="">live preview</a>
-            <a href="">code on gitHub</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <span class="project-buttons"><a href=""><button>live preview</button></a><a href=""><button>code on gitHub</button></a></span>
           </div>
           <div class="card">
             <img src="images/project-cs.png">
             <h3>title</h3>
-            <p>short description</p>
-            <a href="">live preview</a>
-            <a href="">code on gitHub</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <span class="project-buttons"><a href=""><button>live preview</button></a><a href=""><button>code on gitHub</button></a></span>
           </div>
         </div>
       </div>
       <img class="divider" src="images/divider.png">
       <div id="contact" class="landing">
         <h2>Like what you see?</h2>
-        <p>Contact me!</p>
+        <p class="green-text cursive">Send me a message!</p>
+        <form method="post" action="#">
+          <label for="name">Name: <input name="name" type="text" value="John Doe" readonly></label><br>
+          <label for="email">E-mail: <input name="email" type="email" value="johndoe@email.com" readonly></label><br>
+          <label for="message">Message: <textarea name="message" readonly>This form is just an example and cannot currently be used to send me a message.
+
+May the PHP gods bless me with their knowledge in the future.</textarea></label><br>
+          <input type="submit" value="Submit">
+        </form>
       </div>
     </main>
     <footer>
-      <p class="sm-links">All links to social media go here</p>
-      <p>Thanks for visiting!<p>
-      <p>Copyright © 2023 Amadeja Obšteter Privošnik All Rights Reserved.</p>
+      <p>~ Thanks for visiting!~</p>
+      <p class="sm-links"><a href=""><img src="images/github-green.png"></a><a href=""><img src="images/linkedin-green.png"></a></p>
+      <p>Copyright © 2023 Amadeja Obšteter Privošnik</p><p>All Rights Reserved.</p>
       <p>Made with ♥ for coding.</p>
     </footer>
   </body>
