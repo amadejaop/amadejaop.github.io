@@ -303,7 +303,7 @@ textarea:focus, input:focus {
 }
 
 #about {
-  background: url("images/about-faded.png") no-repeat;
+  background: url("images/about-faded-large.png") no-repeat;
   min-height: 920px;
 }
 
