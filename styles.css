@@ -356,6 +356,20 @@ textarea:focus, input:focus {
 }
 
 @media screen and (max-width: 750px) {
+  nav {
+    align-items: center;
+    flex-direction: column;
+    height: 70px;
+  }
+  
+  nav img {
+    display: none;
+  }
+  
+  nav p {
+    margin: 15px 0 -10px 0;
+  }
+  
   #about div {
     width: 80%;
   }
@@ -365,5 +379,35 @@ textarea:focus, input:focus {
   #project-list {
     flex-direction: column;
     width: 300px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  form {
+    width: 300px;
+  }
+  
+  h1 {
+    font-size: 30px;
+    width: 90%;
+  }
+  
+  h2 {
+    font-size: 25px;
+    width: 90%;
+  }
+  
+  nav {
+    height: 60px;
+  }
+  
+  nav li {
+    font-size: 14px;
+    padding: 7px 0 7px 0;
+  }
+  
+  #home p {
+    text-align: center;
+    width: 90%;
   }
 }
