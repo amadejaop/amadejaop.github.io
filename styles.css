@@ -235,10 +235,6 @@ textarea:focus, input:focus {
   width: 100%;
 }
 
-.card p {
-  text-align: justify;
-}
-
 .cursive {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -299,6 +295,7 @@ textarea:focus, input:focus {
 
 .white-text {
   color: white;
+  font-size: 1rem;
   text-shadow: 1px 1px 3px #001b1f, -1px -1px 3px #001b1f, 1px 1px 5px #001b1f, 1px 1px 10px #001b1f;
 }
 
@@ -315,8 +312,7 @@ textarea:focus, input:focus {
   color: #000;
   margin-top: 30px;
   padding: 20px 30px;
-  text-align: justify;
-  width: 50%;
+  width: 60ch;
 }
 
 #about, #projects, #contact {
