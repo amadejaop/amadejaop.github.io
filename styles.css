@@ -226,6 +226,9 @@ textarea:focus, input:focus {
 
 .card {
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 10px;
   width: 300px;
 }
@@ -339,7 +342,7 @@ textarea:focus, input:focus {
 }
 
 #projects {
-  margin: -200px 0 100px 0;
+  margin-bottom: 150px;
 }
 
 #project-list {
@@ -371,10 +374,17 @@ textarea:focus, input:focus {
   }
 }
 
+@media screen and (max-width: 740px) {
+  iframe {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 650px) {
   #project-list {
     flex-direction: column;
-    width: 300px;
+    width: 100%;
+    align-items: center;
   }
 }
 
