@@ -18,9 +18,9 @@ export default function Navbar() {
                     <li className="px-3 hover:bg-violet-400 active:bg-green-300"><a href="#blog">Blog</a></li>
                     <li className="px-3 hover:bg-violet-400 active:bg-green-300"><a href="#contact">Contact</a></li>
                 </ul>
-                <button className="self-start text-3xl font-light font-sans lg:hidden pt-1 z-50" onClick={toggleNavbar}>Menu</button>
+                <button className="self-start text-3xl font-light font-sans lg:hidden pt-1" onClick={toggleNavbar}>Menu</button>
             </nav>
-            <ul className={`flex flex-col items-center justify-center gap-10 text-2xl font-light p-4 h-screen w-screen ${isOpen ? 'translate-y-0' : '-translate-y-full'} ease-in-out duration-500 bg-slate-200 absolute overflow-hidden`}>
+            <ul className={`flex flex-col items-center justify-center gap-10 text-2xl font-light p-4 h-screen w-screen ${isOpen ? 'translate-y-0' : '-translate-y-full'} ease-in-out duration-500 bg-slate-200 absolute z-50`}>
                     <button className="absolute top-5 right-11 text-3xl" onClick={toggleNavbar}>Close</button>
                     <li><a href="#about" onClick={toggleNavbar}>About</a></li>
                     <li><a href="#projects" onClick={toggleNavbar}>Projects</a></li>
