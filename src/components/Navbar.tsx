@@ -10,7 +10,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="fixed flex bg-red-200 justify-between px-10 py-4 w-full">
+            <nav className="fixed flex bg-red-200 justify-between px-10 py-4 w-full z-50">
                 <a href="#"><img src={logo} alt="logo" className="rounded-full bg-white" width="50" height="50" /></a>
                 <ul className="hidden lg:flex gap-5 font-light">
                     <li className="px-3 hover:bg-violet-400 active:bg-green-300"><a href="#about">About</a></li>
