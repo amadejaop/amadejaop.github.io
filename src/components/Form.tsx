@@ -32,20 +32,20 @@ export default function Form() {
     }
 
     return (
-        <section>
+        <section id="contact" className="flex flex-col items-center w-full py-20 px-7 bg-blue-100">
             <h2>Contact</h2>
             {submit ? (
                 <div>Form submitted!</div>
             ) : (
-                <form onSubmit={handleSubmit} target="_self">
+                <form onSubmit={handleSubmit} target="_self" className="flex flex-col w-full max-w-xl">
                     <label htmlFor="entry.565254537">Name</label>
-                    <input type="text" name="entry.565254537" onChange={handleInputData("entry.565254537")} value={formData["entry.565254537"]}  required />
+                    <input className="border text-2xl" type="text" name="entry.565254537" onChange={handleInputData("entry.565254537")} value={formData["entry.565254537"]}  required />
                 
                     <label htmlFor="entry.1149744153">E-mail</label>
-                    <input type="email" name="entry.1149744153" onChange={handleInputData("entry.1149744153")} value={formData["entry.1149744153"]} required />
+                    <input className="border" type="email" name="entry.1149744153" onChange={handleInputData("entry.1149744153")} value={formData["entry.1149744153"]} required />
 
                     <label htmlFor="entry.2142526939">Message</label>
-                    <textarea name="entry.2142526939" rows={4} cols={10} onChange={handleInputData("entry.2142526939")} value={formData["entry.2142526939"]} required></textarea>
+                    <textarea className="border" name="entry.2142526939" rows={4} cols={10} onChange={handleInputData("entry.2142526939")} value={formData["entry.2142526939"]} required></textarea>
 
                     <button type="submit">Submit</button>
                 </form>
