@@ -9,9 +9,6 @@ export default {
       height: {
         '128': '42rem',
       },
-      maxWidth: {
-        'para': '65ch',
-      },
       zIndex: {
         '1000': '1000',
       },
