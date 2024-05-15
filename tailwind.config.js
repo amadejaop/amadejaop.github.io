@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       height: {
-        '128': '42rem',
+        '128': '35rem',
       },
       zIndex: {
         '1000': '1000',

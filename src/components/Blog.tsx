@@ -21,10 +21,10 @@ export default function Blog() {
     return (
         <>
             <section id="blog" className="flex flex-col justify-center items-center bg-white py-20 px-7">
-                <h2 className="text-3xl mb-6">Recent posts</h2>
+                <h2 className="text-2xl self-start font-bold mb-6">Recent posts</h2>
                 <div className="grid gap-7">
                     {posts.map((post) =>(
-                        <div key={post.guid} className="border border-red-500">
+                        <div key={post.guid} className="">
                             <p>{post.pubDate}</p>
                             <p>{post.title}</p>
                             <p>By {post.author}</p>
