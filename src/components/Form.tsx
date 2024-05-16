@@ -39,13 +39,13 @@ export default function Form() {
                     <div>Form submitted!</div>
                 ) : (
                     <form onSubmit={handleSubmit} target="_self" className="flex flex-col w-full">
-                        <label className="my-2 font-medium" htmlFor="entry.565254537">Name:</label>
+                        <label className="my-2 font-medium" htmlFor="entry.565254537">* Name:</label>
                         <input className="border border-zinc-800 text-lg mb-4 bg-zinc-50" type="text" name="entry.565254537" onChange={handleInputData("entry.565254537")} value={formData["entry.565254537"]} minLength={3} maxLength={50} required />
                     
-                        <label className="my-2 font-medium" htmlFor="entry.1149744153">E-mail:</label>
+                        <label className="my-2 font-medium" htmlFor="entry.1149744153">* E-mail:</label>
                         <input className="border border-zinc-800 text-lg mb-4 bg-zinc-50" type="email" name="entry.1149744153" onChange={handleInputData("entry.1149744153")} value={formData["entry.1149744153"]} maxLength={256} required />
 
-                        <label className="my-2 font-medium" htmlFor="entry.2142526939">Message:</label>
+                        <label className="my-2 font-medium" htmlFor="entry.2142526939">* Message:</label>
                         <textarea className="border border-zinc-800 text-lg resize-none mb-4 bg-zinc-50" name="entry.2142526939" rows={4} cols={10} onChange={handleInputData("entry.2142526939")} value={formData["entry.2142526939"]} minLength={3} required></textarea>
 
                         <button className="border border-zinc-800 py-2 font-semibold mt-4 hover:bg-zinc-800 hover:text-white" type="submit">Submit</button>

@@ -12,6 +12,9 @@ export default {
       zIndex: {
         '1000': '1000',
       },
+      listStyleType: {
+        square: 'square',
+      },
     },
   },
   plugins: [],
