@@ -5,7 +5,7 @@ export default function Landing() {
                 <p className="font-medium text-lg">Hi, my name is</p>
                 <h1 className="text-3xl font-black pb-5">Amadeja Obšteter Privošnik</h1>
                 <p className="font-medium pb-5">I like coding visually appealing and user-friendly websites.</p>
-                <a href="#about" className=" link font-bold">Find out more about me</a>
+                <a href="#about" className="link font-bold">Find out more about me</a>
             </div>
         </section>
     )

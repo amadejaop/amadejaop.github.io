@@ -26,10 +26,10 @@ export default function Blog() {
                     <div className="grid gap-7">
                         {posts.map((post) =>(
                             <div key={post.guid} className="">
-                                <p>{post.pubDate}</p>
-                                <p>{post.title}</p>
-                                <p>By {post.author}</p>
-                                <a href={post.link}>Read on Medium</a>
+                                <p className="text-sm text-zinc-400">{post.pubDate}</p>
+                                <a href={post.link}><p className="font-semibold text-lg">{post.title}</p></a>
+                                <p className="text-sm text-zinc-600">By {post.author}</p>
+                                <a className="font-semibold my-2 border border-zinc-800 py-2 px-3 " href={post.link}>Read article</a>
                             </div>
                         ))}  
                     </div>  
