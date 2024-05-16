@@ -7,7 +7,7 @@ export default function Footer() {
                 <li className="list-square pb-2"><a className="link" href="https://github.com/amadejaop">GitHub</a></li>
                 <li className="list-square pb-6"><a className="link" href="https://github.com/amadejaop/amadejaop.github.io">Source</a></li>
             </ul>
-            <p className="text-sm">Copyright 2024 &copy; Amadeja Obšteter Privošnik</p>
+            <p className="text-sm">Copyright 2024 &copy; <a className="link" href="https://amadejaop.github.io/">Amadeja Obšteter Privošnik</a></p>
         </footer>
     )
 }
