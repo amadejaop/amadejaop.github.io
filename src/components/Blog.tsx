@@ -29,7 +29,7 @@ export default function Blog() {
                                 <p className="text-sm text-zinc-400">{post.pubDate}</p>
                                 <a href={post.link}><p className="font-semibold text-lg">{post.title}</p></a>
                                 <p className="text-sm text-zinc-600">By {post.author}</p>
-                                <a className="font-semibold my-2 border border-zinc-800 py-2 px-3 " href={post.link}>Read article</a>
+                                <a className="font-semibold my-2 border border-zinc-800 py-2 px-3 hover:bg-zinc-800 hover:text-white" href={post.link}>Read article</a>
                             </div>
                         ))}  
                     </div>  
