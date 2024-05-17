@@ -16,7 +16,7 @@ export default function Blog() {
 
     useEffect(() => {
         getPostData();
-    });
+    }, []);
 
     return (
         <>
