@@ -49,7 +49,7 @@ export default function Form() {
                         <label className="my-2 font-medium" htmlFor="entry.2142526939">* Message:</label>
                         <textarea className="border border-zinc-800 text-lg resize-none mb-4 bg-zinc-100" name="entry.2142526939" rows={4} cols={10} onChange={handleInputData("entry.2142526939")} value={formData["entry.2142526939"]} minLength={3} required></textarea>
 
-                        <button className="border border-zinc-800 py-2 font-semibold mt-4 hover:bg-zinc-800 hover:text-white shadow-[5px_5px_0px_0px_rgba(219,39,119)]" type="submit">Submit</button>
+                        <button className="border border-zinc-800 py-2 font-semibold mt-4 hover:bg-zinc-800 hover:text-white shadow-[5px_5px_0px_0px_rgba(219,39,119)] hover:shadow-[0px_0px_0px_0px_rgba(219,39,119)] ease-in-out transition-shadow transition-duration" type="submit">Submit</button>
                     </form>
                 )
             }
