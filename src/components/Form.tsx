@@ -35,7 +35,7 @@ export default function Form() {
     return (
         <section id="contact" className="flex flex-col items-center w-full py-20 px-7 bg-white">
             <div className="max-w-prose w-full">
-                <h2 className="text-2xl self-start font-bold mb-6">Contact</h2>
+                <h2 className="text-2xl self-start font-bold mb-6 text-pink-600">Contact</h2>
                 {submit ? (
                     <div>Form submitted!</div>
                 ) : (

@@ -22,7 +22,7 @@ export default function Blog() {
         <>
             <section id="blog" className="flex flex-col justify-center items-center py-20 px-7">
                 <div className="max-w-prose w-full">
-                    <h2 className="text-2xl self-start font-bold mb-6">Recent posts</h2>
+                    <h2 className="text-2xl self-start font-bold mb-6 text-pink-600">Recent posts</h2>
                     <div className="grid gap-7">
                         {posts.map((post) =>(
                             <div key={post.guid} className="">
