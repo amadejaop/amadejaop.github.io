@@ -3,7 +3,7 @@ export default function Projects() {
         <>
             <section id="projects" className="flex flex-col justify-center items-center bg-white py-20 px-7">
                 <div className="max-w-prose w-full">
-                    <h2 className="text-2xl self-start font-bold mb-6">Recent projects</h2>
+                    <h2 className="text-2xl self-start font-bold mb-6 text-pink-600">Recent projects</h2>
                     <p className="max-w-prose text-lg">Under construction.</p>
                     <div className="hidden">
                         <h3>Project title</h3>

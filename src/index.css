@@ -22,16 +22,21 @@ a {
 
 a.link {
     position: relative;
+    transition: 0.7s;
+}
+
+a.link:hover {
+  color: white;
 }
 
 a.link::before {
     content: '';
-    background-color: lightgray;
+    background-color: #db2777;
     position: absolute;
     left: -3px;
-    bottom: 3px;
+    bottom: 5px;
     right: -3px;
-    height: 5px;
+    height: 3px;
     z-index: -1;
     transition: all 0.4s ease-in-out;
   }
@@ -40,12 +45,6 @@ a.link::before {
     bottom: 0px;
     height: 100%;
   }
-
-  a.navlink {
-    padding: 0.4rem 0.7rem;
-    border: 1px solid transparent;
-  }
-
-  a.navlink:hover {
-    border: 1px solid black;
+  a:link:hover::after {
+    color: white;
   }
