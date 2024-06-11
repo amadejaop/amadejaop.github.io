@@ -23,13 +23,12 @@ export default function Form() {
 
         const url = `https://docs.google.com/forms/u/0/d/1CLp29wJ36fTqDKGZnFaC-0vvsE4ps1XRUSMNrNBhxvQ/formResponse?entry.565254537=${formData["entry.565254537"]}&entry.1149744153=${formData["entry.1149744153"]}&entry.2142526939=${formData["entry.2142526939"]}`;
 
-        const res = await fetch(url, {
+        await fetch(url, {
             method: "POST",
             headers: {
                 "Content-Type": "application/x-www-form-urlencoded"
             }
         });
-        console.log(res);
     }
 
     return (
