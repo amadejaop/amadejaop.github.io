@@ -5,7 +5,7 @@ export default function Projects() {
                 <div className="max-w-prose w-full">
                     <h2 className="text-2xl self-start font-bold mb-6 text-pink-600">Recent projects</h2>
                     <div className="w-[150%] mx-[-20%] flex relative">
-                        <div className="bg-pink-600 absolute w-full top-[25%] p-4 m-0"><a href="https://amadejaop.github.io/vue-todo/#/" className="align-bottom"><img src="https://i.ibb.co/1zRNm4t/quendle-xs.png" alt="Screenshot of the application" className="border border-black hover:opacity-75 transition-all duration-500" width={400} /></a></div>
+                        <div className="bg-pink-600 absolute w-full top-[25%] p-4 m-0"><a href="https://amadejaop.github.io/vue-todo/#/" className="align-bottom"><img src="https://i.ibb.co/5K922Wz/q2.png" alt="Screenshot of the application" className=" hover:opacity-80 transition-all duration-500" width={400} /></a></div>
                             <div className="relative w-96 mr-32 ml-auto bg-white py-4 px-8 shadow-[5px_5px_0px_0px_rgba(219,39,119)] border border-black">
                                 <h3 className="text-center font-bold text-lg">Quendle</h3>
                                 <h4 className="text-center italic">A to do list web application</h4>
@@ -31,8 +31,8 @@ export default function Projects() {
                                 </ul>
                                 <br />
                                 <div className="flex justify-between">
-                                <a href="https://amadejaop.github.io/vue-todo/#/" className="font-bold hover:text-pink-600 transition-all duration-500">Live preview</a>
-                                <a href="https://github.com/amadejaop/vue-todo" className="font-bold hover:text-pink-600 transition-all duration-500">Source</a>
+                                <a href="https://amadejaop.github.io/vue-todo/#/" className="font-bold hover:text-pink-600 transition-all duration-500 border-b-2 border-pink-600">Live preview</a>
+                                <a href="https://github.com/amadejaop/vue-todo" className="font-bold hover:text-pink-600 transition-all duration-500 border-b-2 border-pink-600">Source</a>
                                 </div>
                             </div>
                         </div>
